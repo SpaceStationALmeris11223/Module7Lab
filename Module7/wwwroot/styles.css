@@ -1,0 +1,10 @@
+/*Add any customs styles here| they will take precendce over the default bootstrap*/
+#hero{
+    background-color: #2ecc71;
+}
+
+/* Customize the social links style to remove the underlines for the links.*/
+.social-links a{
+    text-decoration: none;/*bit that removes the underline*/
+    font-weight: bold;
+}

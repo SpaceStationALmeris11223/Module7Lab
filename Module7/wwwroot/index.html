@@ -1,0 +1,132 @@
+<!DOCTYPE html> <!--infrorms the browser what the doc type si-->
+
+<html lang="en">
+<!-- the above translates the langguage to --->
+<head>
+
+    <meta charset="UTF-8">
+<!--character set you want is the largest/ most commanly used char set on the net that has chars for most languages in the world -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--^ Tells the page you want to use responsive design. Scale the content to the width of the device-->
+    <title>Teen Hangout</title>
+<!--^ page title -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+<!--Nav == Navigation in bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--Creats nav bar-->
+
+        <div class="container-fluid"><!--Nothing but a container for the links in the navbar-->
+
+            <a class="navbar-brand" href="#">Teen Hangout</a> <!--adds the titles to the top of the nav bar-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!--creates a button | Aria == acessibility-->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+<!--set up the links in the navbar-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fun-zone">Fun Zone</a></li>
+                </ul><!--Href == html refercnce-->
+
+            </div>
+
+        </div>
+
+    </nav>
+
+ 
+
+    <main class="container mt-4">
+<!--main container for content| the first section is the hero (The page title)-->
+        <section id="hero" class="text-center py-5 bg-success text-white rounded">
+            <h1 class="display-4">Welcome to Teen Hangout</h1><!--sets up the display of the hero page-->
+            <p class="lead">Your virtual space to explore, connect, and have fun!</p><!--P == paragraph-->
+        </section>
+
+ 
+
+        <section id="featured" class="my-5"><!--featured secton-->
+            <h2 class="mb-4">Featured Content</h2><!--Header level 2, smaller than header 1-->
+            <div class="row"><!-- div is a container, the class" row" defines a table row -->
+                <div class="col-md-4 mb-4"><!--columns in the first row of the table-->
+                    <div class="card"><!--adds little container like a business card-->
+                        <div class="card-body"><!--sepcifies card body-->
+                            <h3 class="card-title">Latest Trends</h3>
+                            <p class="card-text">Check out what's hot right now!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Music Spotlight</h3>
+                            <p class="card-text">Discover new artists and tracks.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Movie Recommendations</h3>
+                            <p class="card-text">Find your next favorite film.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ 
+
+        <section id="resources" class="my-5">
+            <h2 class="mb-4">Helpful Resources</h2><!--header level 2-->
+            <ul class="list-group"><!--adds an unordered list-->
+                <!--li == list for items| list of links-->
+                <li class="list-group-item"><a href="#" class="text-decoration-none">Study Tips</a></li>
+                <li class="list-group-item"><a href="#" class="text-decoration-none">Mental Health Support</a></li>
+                <li class="list-group-item"><a href="#" class="text-decoration-none">Volunteer Opportunities</a></li>
+            </ul>
+        </section>
+
+ 
+<!-- Fun zone section-->
+        <section id="fun-zone" class="my-5">
+            <h2 class="mb-4">Fun Zone</h2>
+            <div class="ratio ratio-16x9">
+                <!--wid div = 16:9 conatiner-->
+                <!--I frame is used to embed multithread conent in page-->
+                <!--embeds a game, also used for video and audio-->
+                <iframe src="https://www.addictinggames.com/embed/html5-games/20543" scrolling="no"></iframe>
+            </div>
+        </section>
+    </main>
+
+ 
+<!--footer of the page-->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Teen Hangout. All rights reserved.</p><!--creates a paragraph for the copyright-->
+        <!--&copy; creatws the copyright symbol -->
+        <div class="social-links"><!--create a div container-->
+            <a href="#" class="text-white mx-2">FB</a>
+            <a href="#" class="text-white mx-2">IG</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS|includes the code for bootstrap framework -->
+    <!--this enables animations, like sliding navbar, rollovers, carousel-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
